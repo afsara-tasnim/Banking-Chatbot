@@ -1,0 +1,1433 @@
+{ "intents": [
+    {
+      "tag": "greetings",
+      "patterns": ["hi","hello","hey there!","is anyone here?",
+        "Hey!","what's up?","Sup?","Greetings"],
+      "responses": ["hello","Hi","Hi there","What's up",
+        "Hello, How can I help you."]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye","see ya","goodbye","Take care","Bye","tata","Ciao"],
+      "responses": ["Goodbye","Bye. Take care","Bye. Have a nice day!"]
+    },
+    {
+      "tag": "Help",
+      "patterns": ["I need help.",
+        "Can you please help me?",
+        "Can we talk a little","Can you help me","need information",
+        "I need some information","Should I ask you something?",
+        "I need your help",
+        "I need an explanation",
+        "Can you explain me something?",
+        "I have a problem"],
+      "responses": ["Sure, What can I do for you","Sure, I am happy to help.","What information do you need?"]
+    },
+    {
+      "tag": "How_help",
+      "patterns": ["how can you help me","what can you do for me","what information can you give me"],
+      "responses": ["I will provide you Janata Bank related information",
+        "I will help you with banking related quires",
+        "I will provide information regarding Janata Bank","I will answer your questions related to Janata Bank"]
+    },
+    {
+      "tag": "name",
+      "patterns": ["What is your name","Are you a bot",
+        "what are you","tell me your name",
+        "tell me about yourself",
+        "Tell me about you","Tell me about ya",
+        "Do you have a name?",
+        "Can you tell me your name?"],
+      "responses": ["My Name is Jetbot, built by Afsara Tasnim. nice to meet you.","I am Jetbot, I will help you with your quires.","I am a bot, name is Jetbot. Why? well I don't know. I will provide any information you may need regarding Janata bank."]
+    },
+    {
+      "tag": "complain",
+      "patterns": ["I need to report a complain.",
+        "I have a complain.","I wanna file a complain","file complain","report complain",
+        "I want to report a complain."],
+      "responses": ["For reporting complain,please kindly contact our complaint cell: https://www.jb.com.bd/contact_us/complaint_cell."]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["thanks","thank you","that was helpful","thanks for the help",
+        "thanks for the information","thanks for the info","okay",
+        "you are great","you save me","i am glad to know that","okay thanks."],
+      "responses": ["Happy to help","You are welcome","Glad to know the information was helpful","Sure, Happy to help","I am happy to know that I was helpful"]
+    },
+    {
+        "tag": "meaning",
+        "patterns": ["what is the meaning of janata?",
+          "meaning of Janata",
+          "the meaning of janata.",
+          "What does janata means?","janata word meaning","Meaning of Janata word",
+          "Janata means?","what does janata Mean?"],
+        "responses": ["Janata is a Bengali word. It stands for people.","Janata means people.","It is a Bengali word, which means people."]
+    },
+    {
+      "tag": "own",
+      "patterns": ["who owns janata bank?", "owner of janata banks?",
+        "Is janata Bank a Government bank?","janata Bank a government Bank?",
+        "Who is the owner of janata Bank?","what is janata bank",
+        "The owner of janata bank?",
+        "Who is the owner of janata Bank.",
+        "janata Bank Owner?","what is janata Bank?"],
+      "responses": ["Janata Bank Limited is a 100% government owned commercial Bank in Bangladesh"]
+    },
+    {
+      "tag": "website_link",
+      "patterns": ["give me the website link","what is janata bank website link",
+        "website link","give me the website link of janata bank",
+        "give janata bank website link",
+        "I want the website link"],
+      "responses": ["Janata Bank website link: https://www.jb.com.bd/"]
+    },
+    {
+      "tag": "history",
+      "patterns": ["When janata Bank Limited was Established?",
+        "When did the bank established?","the background of janata bank",
+        "tell me about Janata Bank",
+        "history of Janata Bank",
+        "When the bank was build?",
+        "janata Banks History",
+        "Establishment of janata Bank",
+        "what year the bank was established?","What is the History of janata Bank","Brief information of janata Bank",
+        "what year the bank was first build?","what can you tell me about janata bank",
+        "what year the bank was first came to public?"],
+      "responses": ["From 1972, Janata Bank was a nationalized bank and\nwas catering the need of the mass business people until recently when it was corporatist (on 15th November 2007)\nas Janata Bank Limited."]
+    },
+    {
+      "tag": "account",
+      "patterns": ["can I open account in janata bank limited?",
+        "can i open a bank account here?","i wanna open an account",
+        "is it possible to open a bank account at janata bank?",
+        "i want to open a bank account."],
+      "responses": ["You can open a savings,\ncurrent or FDR account with any branch of Janata Bank Limited.\nClick here for possible locations: https://pmis.janatabank-bd.com/webonlinebranchinfo.aspx"]
+    },
+   {
+    "tag": "where_account",
+      "patterns": ["where can I open an account",
+        "where is your branches","your branches","where is your branch",
+      "where I can open an account","where to open an account"],
+      "responses": ["You can open an account at any local branches.Click here for the possible locations: https://pmis.janatabank-bd.com/webonlinebranchinfo.aspx"]
+    },
+    {
+      "tag": "account_balance",
+      "patterns": ["How can I know the balance of my account",
+        "check account balance","How can I check my account balance",
+        "process to know the account balance",
+        "how to know the account balance", "how to check the account balance","know account balance"],
+      "responses": ["Contact your local branch where you opened your account. Branches Contact info: https://pmis.janatabank-bd.com/webonlinebranchinfo.aspx"]
+    },
+    {
+      "tag": "exchange_rate",
+      "patterns": ["exchange rate","what is the exchange rate between US ($) and Bangladesh currency(Tk)",
+        "What is the exchange rate between USA and Bangladesh?","current exchange rate","exchange rate between",
+        "Exchange rate between USA dollar and Bangladeshi Tk?","what is the current exchange rates",
+        "Exchange rate between US and Bangladesh"],
+      "responses": ["To learn about the latest exchange rate, click here : https://fx-rate.net/BDT/"]
+    },
+    {
+      "tag": "islamic_banking",
+      "patterns": ["Do you have islamic banking system",
+        "Does janata Bank have islamic banking",
+        "islamic insurance","islamic loan",
+      "Do you practice islamic banking?"],
+      "responses": ["Janata Bank has obtained the BB approval for operating\nIslamic banking window but is yet to start the operation."]
+    },
+    {
+      "tag": "sending_money_home",
+      "patterns": ["can I send money home from overseas?",
+        "How to send money from overseas?","can i send money to bangladesh",
+        "How can I send money from overseas?","how to send money to my account in bangladesh",
+        "Is it possible to send money from overseas?","sending money to bangladesh",
+        "How to send money back to Bangladesh?",
+        "Can I send money from abroad?",
+        "Sending money from abroad."],
+      "responses": ["Yes, you can easily send money from overseas.\nContact any of our overseas branches or e-mail: id-obd@janatabank-bd.com"]
+    },
+    {
+      "tag": "ready_cash",
+      "patterns": ["What is ready cash?",
+        "about ready cash.",
+        "Can you tell me about ready cash?",
+        "ready cash"],
+      "responses": ["Ready cash is a debit card facility of Janata Bank Limited,\nwhich enable the users to pay all the utility bills easily.\nIt is a joint venture of Janata Bank Limited & an American International Investment Inc."]
+    },
+    {
+      "tag": "apply_for_ready_cash",
+      "patterns": ["do I need to apply for ready cash facilities?",
+        "how can i open ready cash","open ready cash",
+        "how can I apply for ready cash","apply for ready cash",
+        "apply for ready cash","apply ready cash"],
+      "responses": ["You need to apply separately to get the facility of ready cash. For more information please contact with your nearest branch or call the helpline:Phone:\n+88 02-223380029\n+88 02-223380042\n+88 02-223385042\n+88 02-223386142\n+88 02-223350193\nFax: 02 223384644,\nemail: mis@janatabank-bd.com"]
+    },
+    {
+      "tag": "overseas_branches",
+      "patterns": ["Does janata Bank has overseas branches?",
+        "Does janata Bank has any foreign branches?","do you have branches in abroad",
+        "Does the bank has any branches in overseas?","do you have any overseas branches",
+        "Does the Bank has any branches outside of the country?","do you have any branches in overseas",
+        "Does the bank has any branches outside Bangladesh?",
+        "Foreign branches",
+        "overseas branches",
+        "branches at abroad."],
+      "responses": ["Yes. Janata Bank has four overseas branches at UAE."]
+    },
+    {
+      "tag": "new_Loan_program",
+      "patterns": ["New loan programs","loan programs.",
+        "Lasted loan programs",
+        "What are the latest loan programs?",
+        "What are the new loan programs?",
+        "Tell me about some new loan programs?",
+        "Tell me about the latest loan programs."],
+      "responses": ["The latest loan programs from Janata Bank Limited are:\n to finance the IT sector,\n Ready Cash,\n Ghoroa,\n Consumer Credit etc. For more info visit the Janata Bank website: https://www.jb.com.bd/"]
+    },
+    {
+      "tag": "consumer_credit_program",
+      "patterns": ["consumer credit program",
+        "clients credit programs?",
+        "What is the consumer credit program?",
+        "Tell me about Consumer credit program?",
+        "I am interested in consumer credit program."],
+      "responses": ["The consumer credit is a facility for individuals\nto take small loan under leasing arrangement to purchase household products."]
+    },
+    {
+      "tag": "ghoroa",
+      "patterns": ["What is Ghoroa?",
+        "Tell me about ghoroa.",
+        "I am interested in ghoroa.",
+        "Say something about ghoroa.",
+        "Define ghoroa.",
+        "Explain Ghoroa to me.","ghoroa"],
+      "responses": ["Ghoroa is a Bengali word, which means home bound.\nThis package loan is mainly for rural people of Bangladesh to make each family self-sufficient through employment and income generation."]
+    },
+    {
+      "tag": "non_resident_bangladeshsi",
+      "patterns": ["What does Janata Bank offer for the Non-Resident Bangladeshis?",
+        "what do you offer to non resident bangladeshi",
+        "What Janata Bank Limited can do for the Non-resident Bangladeshi?",
+        "offer for non resident bangladeshi","facilities for non resident bangladeshi",
+        "What's there for Non-resident Bangladeshis?","offer for non resident",
+        "Options for Non-resident Bangladeshi","offer for non-resident bangladeshi",
+        "Offer for Bangladeshi who lives aboard.","offer for people who leaves aboard","offer for person who leaves outside of bangladesh",
+        "What offer can I get as Non-resident Bangladeshi?"],
+      "responses":["Janata Bank Limited can facilitate quick remittance of foreign currencies from NRBs to their kith and kins.\nEntrepreneurial NRBs can ask for software development loans from\nthe Bank either as an individual sponsor or can participate in Joint Venture.\n They can also promote JB financed software products in Bangladesh.\n They can also invest in agro -processing industries and other thrust sectors through Janata Bank Limited.\n Hope the above answers will help you know more about the activities of Janata Bank Limited. If you have any other question which has not been covered in the web site, please feel free to contact us through e-mail, fax or phone."]
+    },
+    {
+      "tag": "typesOfAccount",
+      "patterns": ["types of account",
+        "account options",
+        "What type of account do you offer?",
+        "types of account the bank offer?",
+        "What kind of accounts does the bank offer?",
+        "Tell me about the types of account the bank offer.",
+        "What type of accounts can I open?",
+        "What are the options for opening an account?",
+        "Tell me about my options for opening an account."],
+      "responses":["We offer:\nSaving Deposit Account.\nCurrent Deposit Account.\nShort Term Deposit Account.\nResident Foreign Currency Deposit.\nForeign Currency Deposit.\nConvertible Taka Account.\nNon-Convertible Taka Account.\nExporter's FC Deposit (FBPAR)."]
+    },
+    {
+      "tag": "preferable_for_individuals",
+      "patterns": ["What types of account is preferable for individuals?",
+        "What type of account is more suitable for individuals?",
+        "What option is more suitable for individuals?",
+        "What are my options as individuals?","preferable for individuals",
+        "preferable account for me.","appropriate accounts for me?",
+        "Preferable options for me?"],
+      "responses":["The preferable type of accounts for individuals:\nSaving Deposit Account.\nShort Term Deposit Account.\nForeign Currency Deposit.\nFor Business purposes you can open Current Deposit Account."]
+    },
+    {
+      "tag": "requirements_for_account",
+      "patterns": ["requirements for account","How can I open an account",
+        "Need to open an account","documents needed to open a bank account",
+        "What are the requirements to open a Bank account?","what are the requirements",
+        "What are the required documents to open a bank account?",
+        "What does I need to open a bank account?",
+        "What documents do I need to open a Bank account?"],
+      "responses": ["You need to provide photocopies of NID,\nPassport sized photograph,\nphotograph and NID of Nominee’s;\nfor a current account you need TIN certificate.\nBeside these documents you need to provide a photocopy of utility bills\nto create a bank account. You also need to fill up an account opening form."]
+    },
+    {
+      "tag": "withdraw_from_account",
+      "patterns": ["how can i withdraw money from my account",
+        "how to cash out money from my account",
+        "I wanna withdraw money from account",
+        "I want to withdraw money from accout",
+        "how to cash out money from account",
+        "how to withdraw money from account"],
+      "responses": ["During the account opening process we provide you with non-MICR cheque with which you can withdraw money from your account.\nIf you need MICR cheque then you should submit a dully filled form as a requisition."]
+    },
+    {
+      "tag": "Time_to_open_account",
+      "patterns": ["Time to open an account.",
+        "duration to open an account","how long does it take to open account",
+        "How much time is needed to open a bank account?","how long will it take to open my account",
+        "how much time is required to open a bank account?",
+        "How long it takes to open a bank account?",
+        "Within how much time can I open a bank account?",
+        "What is the time duration to open a bank account?"],
+      "responses": ["If you provide the required documents with the account form,it’s a matter of a click to create your account.\nAfter opening the account, we will provide you non-MICR cheque with which you can withdraw money from your account.\nIf you need MICR cheque then you should submit a dully filled form as a requisition."]
+    },
+    {
+      "tag": "janata_app",
+      "patterns": ["where can I find the app?","is the app is free for downloading","is it free to download",
+        "Is there any banking app?","banking app","is there any app",
+        "Does Janata Bank has an app?","does janata bank has any app",
+        "Will I find the app in playstore?","App in playstore"],
+      "responses": ["Janata Bank provides a banking app. You can find the 'Janata bank' app in playstore and it's a free download."]
+    },
+    {
+      "tag": "app",
+      "patterns": ["What can I do with the app?","Janata Bank app?",
+        "What can I do with this app?",
+        "What else can I do with the app?",
+        "What is the apps functionalities?",
+        "Tell me more about this app?",
+        "What else can you tell me about this app?",
+        "What else can I do with this app?"],
+      "responses": ["You can bank with us 24*7 with the apps.\nYou can check balance, recharge your mobile, make payment of utility bills,\ntransfer money to other account within the bank,\ntransfer money to other bank account using NPSB and BFTN,\nmake online payment.",
+        "Using this application, you will be able to search/browse branch/office information of Janata Bank Limited.\nPhone numbers, locations and other required information are also available."]
+    },
+    {
+      "tag": "debit_card",
+      "patterns": ["can I have a Debit card against my account?",
+        "can I have a debit card with my account?","can i open a debit card",
+        "tell me the process to get a debit card.","can i get a debit card?"],
+      "responses": ["We offer VISA/Mastercard/Q-cash Debit card for which we take a small charge annually.\nWe have appropriate amount of ATM’s across the country that offers you to unlimited access of 24*7 cash withdrawal service.","Yes, you have have a debit card against your account.","Yes, we offer VISA/mastercard/Q-cash Debit card."]
+    },
+    {
+      "tag": "locker_system",
+      "patterns": ["do you provide locker service","do you provide storage system",
+        "do you offer safe custody","do you provide safekeeping service","do you provide storage service",
+        "does janata bank has locker service","do you provide safes to keep valuables",
+        "do you provide safe custody","what is locker system","what is safekeeping",
+        "what is locker service in banking","what is storage system",
+      "do you offer locker services"],
+      "responses": ["Locker service offered by the Banks gives customers a completely secured facility for safekeeping of his/her valuable items, confidential documents and other valuables against from any unfortunate incident. Janata Locker Service is available in most of the Branches."]
+    },
+    {
+      "tag": "locker_rent_charge",
+      "patterns": ["what is the rent for locker service","do i need to pay for locker service","do i need to pay for locker system",
+        "what is the rent for safekeeping","price amount of locker key security","how much do i have to pay for my locker",
+        "what is the rent for safe custody","price of locker key security","payment for locker",
+        "price of large size locker","rent of small storage","rent for medium storage","rent for large storage",
+        "price of big locker","price of small storage","price of medium storage","price of large storage","price of big storage",
+      "rent of locker services","pay for safekeeping",
+        "price of locker service",
+        "price of small locker","price of medium size locker",
+        "rent of safekeeping","price of safekeeping",
+        "price of safe custody",
+        "rent of safe custody"],
+      "responses": ["1. Yearly TK. 2000/- = For small size locker.\n2. Yearly TK. 2500/- = For medium size locker.\n3. Yearly TK. 3000/- = For big size locker.\n4. Locker Key Security(Deposit) = 5000/- for all categories(Refundable on closing)"]
+    },
+    {
+      "tag": "locker_available",
+      "patterns": ["where can I open the locker","safe keeping service available","where can i find locker system",
+        "where is the locker service is available","Safe custody available","where to apply for locker service",
+        "locker service is available","locker service available","where to apply for safe custody service","where to apply for storage service"],
+      "responses": ["Janata Locker Service is available in most of the Branches."]
+    },
+    {
+      "tag": "utility_bill",
+      "patterns": ["What utility bills are collected by the bank","what kind of utilities bills i can pay",
+        "utilities collected by Janata Bank","what utility can i pay","what kind of utility bills i can pay",
+      "utilities collected","types of utilities paid via janata bank","types of bills",
+        "utilities can be paid by janata bank","types of bills I can pay",
+        "utilities janata bank collects","what utilities can i pay",
+        "what type of utility bills can I pay via janata bank"],
+      "responses": ["Janata Bank collect the following Utilities:\nElectricity Bill.\nGas Bill.\nWASA Bill."]
+    },
+    {
+      "tag": "pay_utility_bill",
+      "patterns": ["how can I pay my utility bills via janata bank","i wanna pay electircity bill using my account",
+        "how to pay my bills via janata bank",
+        "can i pay my gas bill","how to pay utility bills","how to pay utilities",
+        "can i pay my water bill","can i pay my wasa bill",
+        "pay bills using janata bank account"],
+      "responses": ["You can pay your utility bills by using janata bank app or in any local branches."]
+    },
+    {
+      "tag": "Instant_payment",
+      "patterns": ["Can I send money via online",
+        "can i send money through banks system","instant payment",
+      "can I cash deposit without going to the bank","fast payment",
+        "cash out from account instantly","less time consuming payment",
+        "check payment without visiting bank","online payment",
+        "instant payment system","online cash deposit",
+      "instant cash withdraw without visiting the bank","online cash withdraw"],
+      "responses": ["You can do online cash deposit and cheque payment as well as instant payment of foreign and inland remittances through Janata Banks 'JB Remittance Payment System'. Account Holder can deposit and withdraw money from any branches of Janata Bank. For more information contact the helpline."]
+    },
+    {
+      "tag": "re_active_card",
+      "patterns": ["active",
+        "re-active",
+        "How can I active my card?",
+        "How can I reactive my card?",
+        "I need information to active my card.",
+        "I need information to reactive my card.",
+        "Tell me how to active my card.",
+        "tell me how to reactive my card.",
+        "Explain me the process to active my card.",
+        "Explain me the process to reactive my card.",
+        "My card has been deactivated. Help me."],
+      "responses": ["A card will be activated after submission of the acknowledgement\nslip/reactivation request to the home branch.\nYou can also active/reactive/deactivate card from our customer care/ helpline"]
+    },
+    {
+      "tag": "card_for_marketing",
+      "patterns": ["card for marketing",
+        "card for shopping",
+        "Can I use MasterCard for shopping?",
+        "Can I use Visa for shopping?",
+        "Can I use Classic card for shopping?",
+        "Can I use MasterCard for purchase?",
+        "Can I use Visa Card for purchase?",
+        "Can I use Classic card for purchase",
+        "Can I shop with Master Card?",
+        "Can I shop with Visa Card?",
+        "Can I shop with Classic card?"],
+      "responses": ["Any Janata Bangla Bank Ltd MasterCard/Visa/Classic card can be used for shopping."]
+    },
+    {
+      "tag": "what_credit_card",
+      "patterns": ["What is credit card?",
+        "Define credit card",
+        "tell me about credit card"],
+      "responses": ["A credit card is a payment card issued to users (cardholders)\nto enable the cardholder to pay a merchant for goods and services based on\nthe cardholder's accrued debt"]
+    },
+    {
+      "tag": "what_debit_card",
+      "patterns": ["what is debit card",
+      "define debit card","tell me about debit card"],
+      "responses": ["A debit card is a payment card that deducts money directly from a consumer's checking account when it is used. Also called check cards or bank cards"]
+    },
+    {
+      "tag": "credit_rating",
+      "patterns": ["what is credit rating",
+        "credit rating","tell me about credit rating",
+        "rating of credit"],
+      "responses": ["Bangladesh Bank has declared credit rating of commercial banks mandatory and to be conducted by recognized rating agencies. To learn more about it, visit: https://www.jb.com.bd/about_us/credit_rating"]
+    },
+    {
+      "tag": "apply_credit_card",
+      "patterns": [
+        "Can I apply for a credit card?","application for credit card",
+        "how can i apply for credit card","apply for credit card","credit card application",
+        "tell me the process to get a credit card",
+        "explain me the procedure to get a credit card",
+        "how can i apply for credit card?"],
+      "responses": ["You can apply for a credit card.\nA filled out credit card application form along with the following documents are needed to be submitted to a branch:\n Photograph (one copy).\n Copy of TIN certificate. \n Copy of Passport (page 1 to 6 and renewal page) and NID card. \n Proof of residence(copy of utility bills), if any. \n Bank statement for the last 6 months. \n If Salaried, lasts original salary certificate/pay slip. \n If self-employed, copy of trade license/MoA and personal/company Bank Statement for the last 6 months. \n Copy of wealth statement submitted for Income Tax/IT 88 (for Businessman).\n Visiting Card.\n Other credit card bill (If applicable)."]
+    },
+    {
+      "tag": "card_retained_atm",
+      "patterns": ["My card was retained by the atm. How can I get it back?",
+        "My card got captured by the atm, how to retrieve it?",
+        "My card was captured by the atm.","card stuck in atm","Can't get out card from atm","can not get out card from atm",
+        "my card is got captured by the atm.","my card got stuck in the atm","Card got stuck"],
+      "responses": ["In case of retained/captured card. Please contact:\n 1. Home Branch or \n 2. Call our 24-hours Call Center."]
+    },
+    {
+      "tag": "lost_card",
+      "patterns": ["lost card","I have lost my card. What can I do now?",
+        "I lost my card.",
+        "How can I get my lost card back?",
+        "What can I do to retrieve my lost card?"],
+      "responses": ["Please contact home branches or call our 24 hours Call Center at 16*** to block the card immediately and submit a card replacement request to the home branch."]
+    },
+    {
+      "tag": "debit_card_another_atm",
+      "patterns": ["debit card on another atm","Can I use my debit card in another banks atm?",
+        "Can I push my debit card in a different banks atm?","Use debit card in Another banks atm?","Withdraw money using another banks atm",
+        "Can I use my debit card in a different banks atm","Can I withdraw money from my card using another banks atm","Withdrawing money using another banks ATM"],
+      "responses": ["Yes, sure, you can use your card in any bank’s ATM. In that case standard charge is applicable."]
+    },
+    {
+      "tag": "micro_card",
+      "patterns": ["what's micro credit","what is micro credit",
+        "tell me about micro credit",
+        "Define Micro credit"],
+      "responses": ["Micro-credit is mainly for rural customers, who want to take a small amount loan for self-employment"]
+    },
+    {
+      "tag": "change_pin",
+      "patterns": ["change pin",
+        "change card pin","change personal identification number",
+        "can I change my cards Pin?",
+        "how can I change my card's pin?",
+        "is it possible to change my cards pin?",
+        "how can I change my cards pin?",
+        "can you tell me how can I change my cards pin?",
+        "is it possible to change my cards pin?",
+        "help me with My cards pin.",
+        "i need to change my cards pin.",
+        "is there any way i can change my cards pin?"],
+      "responses": ["PIN can be changed at any of our Bank's ATM. To change the PIN,\nInsert your card in ATM. \n• Input your Present PIN (Personal Identification Number)\n• Input your new PIN (It must be 4 digit)\n• Input your new PIN again for confirmation.\n• Receive your card "]
+    },
+      {
+      "tag": "forgot_pin",
+      "patterns": ["i forgot my pin","i can't remember my pin",
+        "i lost my pin","i don't remember my pin",
+        "do not remember my pin","can not remember pin"],
+      "responses": ["Please contact your local branch with necessary documents to change/retrieve the pin"]
+    },
+    {
+      "tag": "charge_on_Account",
+      "patterns": ["charge on account","Charges on account","Maintenance changes on account",
+        "What are the charges of my account","Interest on my account",
+        "Tell me about the account charges",
+        "How much amount is needed for account charge",
+        "Explain me the account changes",
+        "What is account charges",
+        "What is the amount needed to spear the account charges"],
+      "responses": ["According to the Bangladesh Bank order, we will charge against your account.\nIf the average balance remain under 10 thousand, we won't change for account maintenance, but standard SMS charge and card charge is applicable."]
+    },
+    {
+      "tag": "account_form",
+      "patterns": ["Where can I find account opening form","account opening form of Janata Bank","Account opening form","account forms"],
+      "responses": ["Visit this link to get the account opening form : https://www.jb.com.bd/about_us/download"]
+    },
+    {
+      "tag": "close_account",
+      "patterns": ["How to close my account","I wanna close my account","how to close my account","I wanna close my account"],
+      "responses": ["By providing essential documents to your branch manager you can close your account."]
+    },
+    {
+      "tag": "head_office",
+      "patterns": ["Where is the head office?","Contact Info of the Head office","headoffice",
+        "Head office?","How can I contact the Head office?","Head offices contact information",
+        "Where is the head office of Janata Bank?","Where is your head office","head office","Where is your headoffice",
+        "Janata Banks Head office?"],
+      "responses": ["110, Motijheel Commercial Area, Dhaka-1000, Bangladesh.\n Phone:\n+88 02-223380029\n+88 02-223380042\n+88 02-223385042\n+88 02-223386142\n+88 02-223350193\nFax: 02 223384644"]
+    },
+    {
+      "tag": "local_branches",
+      "patterns": ["Janata Bank branches in Dhaka","branches of janata bank","where are your branch","branch of janata bank near me",
+      "where is the branches at dhaka","where are the branches","location of local branches","where is your local branch","location local branches"],
+      "responses": ["There are total 901 branches of Janata Bank Limited situated in 64 districts. You can browse the branches by districts or click the link to get more info : https://www.banksbd.org/jbl/branches"]
+    },
+    {
+      "tag": "Customer_service",
+      "patterns": ["What is the customer care number",
+      "customer care numbers",
+        "customer care service",
+        "what is the customer care service","Helpline",
+        "helpline numbers","helpline number of Janata bank"],
+      "responses": ["Phone:\n+88 02-223380029\n+88 02-223380042\n+88 02-223385042\n+88 02-223386142\n+88 02-223350193\nFax: 02 223384644,\nemail: mis@janatabank-bd.com"]
+    },
+    {
+      "tag": "atm_services",
+      "patterns": ["what are the atm services?","does janata bank has atms",
+      "atm services?","what atm services does Janata Bank offer?","does janata bank provide atm",
+      "what atm services Janata Bank Provides?","does janata bank has atm",
+      "what atm services I can get?","atm service helpline",
+        "atm related questions"],
+      "responses": ["To offer modern Banking Service, Janata Bank Limited is providing ATM facilities with Debit and Credit cards to the customer. Features of out Card:\n connected with NPSB (National Payment Switch Bangladesh).\n Running under the largest Network of Bangladesh.\n Card holder can use any ATM & POS (Point of Sales) within Bangladesh.\n Mobile phone recharge & Online Tax payment facility is available.\n Minimum fees and charges.\n SMS alert service is available.\n No hidden cost. \n\n For any other query contact: 02-9571724, 01730700065, 01708122133"]
+    },
+    {
+      "tag": "atm_card_withdraw_process",
+      "patterns": ["what is the card withdrawal procedure from atm?",
+        "atm card withdrawal Process?","how to withdraw money from atm",
+        "how to withdraw money through atm","I wanna withdraw money from atm",
+        "card withdrawal atm","how can i withdraw money from atm","I want to withdraw money from atm",
+        "atm and Card withdrawal","withdraw money from atm",
+        "how can I cash out with atm card?",
+        "cash out with atm",
+        "cash out process from atms"],
+      "responses": ["Insert your Card in ATM & wait until PIN input screen Visible \n• Input your PIN (Personal Identification Number).\n • Select amount shown in Monitor (5000/-, 10000/-, 15000/-, 20000/-.)\n • If you want to withdraw other amount, please select other amount.\n • Input your desired amount.\n • Select Press correct/incorrect.\n • Select Credit account for Credit Card and Primary account / Savings account for Debit Card.\n • Collect your Card, money and receipt.\n • If you not get money from ATM, please contact to Guard/Branch/Card Management Department before leaving ATM booth"]
+    },
+    {
+      "tag": "location_of_atm",
+      "patterns": ["atm location of Janata Bank",
+        "atm location","atm location in bangladesh",
+        "Location of atm",
+        "where is the atm location of janata bank",
+        "the atms in dhaka"],
+      "responses": ["For ATM locations of Janata Bank Click here: https://www.jb.com.bd/about_us/atm"]
+    },
+    {
+      "tag": "money_deposit",
+      "patterns": ["where I can deposit money?",
+        "Where can I deposit money",
+        "Where to deposit money?"],
+      "responses": ["Money can be deposited in any branch of Janata Bank Limited. Or via online through Janata Bank app."]
+    },
+    {
+      "tag": "atm_withdrawal_per_day",
+      "patterns": ["How many withdrawals I can do per day from atm",
+        "How many withdrawal in one day from atm",
+        "how many times can I withdraw money from atm",
+        "per day atm withdraw number?",
+        "atm money withdraw max per day",
+        "Max withdraw time in one day from atm",
+        "how many times i can cash out from atm",
+        "per day atm money withdraw number?",
+        "How many times I can withdraw cash from atm?",
+        "Times can withdraw cash from atm?"],
+      "responses": ["Per day you can do 4 withdrawals max."]
+    },
+    {
+      "tag": "atm_Max_transaction",
+      "patterns": ["per transaction amount through atm",
+        "how much can I withdraw in per transaction",
+        "Maximum transaction amount in atm card","per transaction in atm",
+        "per withdraw amount through atm","atm max cash amount in one withdraw","atm max amount to cash out in one try",
+        "atm max transaction","per max transaction in atm"],
+      "responses": ["Per transaction Maximum TK 20,000/-"]
+    },
+    {
+      "tag": "atm_Max_withdrawal",
+      "patterns": ["What is the per day cash withdrawal max amount in atm?",
+        "how much can I withdraw in one day from atm",
+        "Maximum withdrawal amount in atm card",
+        "Limit of cash out in atm","how much can I withdraw from atm",
+        "atm max withdrawal","per max withdraw amount for atm?"],
+      "responses": ["Per day Maximum withdrawal amount TK 40,000/-"]
+    },
+    {
+      "tag": "JB_PIN_define",
+      "patterns": ["what is JB PIN cash?","what is jb pin",
+        "explain JB PIN","Tell me about JB PIN","What's new in JB pin"],
+      "responses": ["It is a new launched service of Janata Bank Limited, where the account holder can easily send money to non-account holder."]
+
+    },
+    {
+      "tag": "sending_money_to_non_accountable",
+      "patterns": ["can i send money to non account holder",
+        "I want to send money to someone who doesn't have an account",
+        "is there any way of sending money to non account holder",
+        "is it possible to send money to non account holder",
+        "Sending money to non account holder",
+        "is it possible to send money to people who is not an account holder",
+        "can I send money to someone who doesn't have a account"],
+      "responses": ["Yes, you can send money to a non account holder by using JB PIN cash."]
+
+    },
+    {
+      "tag": "send_money_JB_PIN",
+      "patterns": ["Who can send money by JB PIN cash?",
+        "requirements to send money through JB PIN","who can send money through jb pin",
+      "Is it possible for me to Send money JB PIN cash","who can send money by jb pin",
+        "Can I send money through jb pin?",
+        "Do I need to have an account to send money through Jb pin?"],
+      "responses": ["If you are a customer of Janata Bank, then you can send money using JB PIN cash service."]
+    },
+    {
+      "tag": "service of_JB_PIN",
+      "patterns": ["where can I find the service of JB PIN cash?",
+        "Service of Jb pin cash?",
+        "available services of jb pin"],
+      "responses": ["At any local branches of Janata Bank Limited"]
+    },
+    {
+      "tag": "who_withdraw_JB_PIN_money",
+      "patterns": ["who can withdraw the money send by jb pin cash?",
+        "who can receive the jb pin money","can my withdraw jb pin money",
+      "who can withdraw money send through jb pin cash?",
+        "who can Withdraw jb pin money",""],
+      "responses": ["The selected people chosen by the sender can withdraw the money from any local branches."]
+    },
+    {
+      "tag": "receiver_account_JB_PIN",
+      "patterns": ["Do I have to have an account at Janata Bank to withdraw the sent money by jb pin cash?",
+      "Do I have to have an account to receive jb pin cash money?",
+        "Does receiver of jb pin cash has to have an account in Janata Bank?",
+    "Is it required for me to have an account to withdraw jb pin cash money?",
+        "Does receiver have to have an account to withdraw jb pin cash?",
+    "Do I have to have an account to cash out jb pin cash money?"],
+      "responses": ["No, the receiver doesn’t need to have a bank account to withdraw money sent via JB pin Cash. This service is available to all the official customers of Janata Bank."]
+    },
+    {
+      "tag": "process_to_withdraw_JB_PIN",
+      "patterns": ["How can I withdraw money sent my jb pin cash?",
+      "How to withdraw money sent by jb pin cash?","What is necessary steps to withdraw the money sent by jb pin cash?",
+      "how to withdraw jb pin money","Process to withdraw jb pin money","how to withdraw jb pin money"],
+      "responses": ["To withdraw the money sent by JB PIN cash, the receiver has to have: \n mobile number.\n the PIN code. \n One copy of NID/Passport/TIN."]
+    },
+   {
+      "tag": "charge_on_JBPIN",
+      "patterns": ["what is the charge on money sent by jb pin Cash?","do i need to pay any charge for jb pin cash",
+        "Charge on jb pin cash","do I have to pay any charge on sent money by jb pin",
+        "what charge I have to pay for jb pin cash?","charge I have to pay for jb pin cash"],
+      "responses": ["The charges on Money: \n From 1 Tk to 10,000 TK, the charge 20 Tk.\n From 10,001 TK to 25,000 TK, the charge 30 TK.\n From 25,001 TK to 50,000 TK, the charge 60 TK.\n From 50,001 TK to 1,00,000, the charge 80 TK."]
+    },
+    {
+      "tag": "receiver_charge_on_JBPIN",
+      "patterns": ["Is any charge applied on the received money sent by JB Pin cash?",
+        "Do I have to pay any charge as receiver of jb pin cash?",
+        "Do I need to pay any charge against the withdrawal money of JB pin cash?",
+        "Receiver charges on jb pin",
+        "Does receiver have to pay any charge of jb pin?",
+        "What is the receiver changes on jb pin cash?",
+        "What are the receiver changes on jb pin",
+      "Do receiver of jb pin money has to pay any charge?",
+        "Charge on receiver end money of jb pin cash?"],
+      "responses": ["No, receiver doesn't have to pay any charges"]
+    },
+    {
+      "tag": "perday_jbpin",
+      "patterns": ["How much money can be sent by jb pin cash per day?",
+        "Per day jb pin cash transaction",
+        "How much money can I send using jb pin cash per day",
+        "How much money can I send via jb pin cash in one day",
+        "transaction per day by jb pin cash",
+        "Transaction in one day via jb pin cas","One day money sending limitation of jb pin cash",
+        "Max send amount in jb pin cash","how much money can I send bt jb pin cash in one day",
+        "Max withdrawal amount in jb pin cash","Sending money limitation in jb pin cash",
+        "limit of money sending of jb pin cash",
+        "limit of translation of jb pin cash",
+      "jb pin Cash Per day"],
+      "responses": ["Per day, in Per transaction, one can send/withdraw up to TK 1,00,000/- (1 Lack), up to 5 times."]
+    },
+    {
+      "tag": "Non_resident_currency",
+      "patterns": ["tell me about the non resident currency deposit",
+      "tell me about non resident currency account",
+        "what is non resident currency account","what is nrc",
+    "What is non resident currency deposit account"],
+      "responses": ["Expatriate Bangladeshi Nationals and persons of Bangladeshi origin including those having dual nationality may open Non- Resident Foreign Currency Deposit Account with any authorized dealer branch of Janata Bank Limited.\nFor more info, Click here : https://www.jb.com.bd/international_trade/facilities_offered_to_the_remitters"]
+    },
+    {
+      "tag": "foreign_currency",
+      "patterns": ["tell me about the foreign currency deposit","what is fcd","tell me about fcd",
+      "tell me about foreign currency account","what is foreign currency account",
+    "What is foreign currency deposit account"],
+      "responses": ["Persons ordinarily resident in Bangladesh may open RFCD Accounts with the foreign currencies brought in at the time of their return from abroad.\nFor more info, Click here : https://www.jb.com.bd/international_trade/facilities_offered_to_the_remitters"]
+    },
+    {
+      "tag": "Area_office",
+      "patterns": ["Where is the area office","area office of janata bank","area office"],
+      "responses": ["The area office list of Janata bank : https://pmis.janatabank-bd.com/areainfo.aspx"]
+    },
+    {
+      "tag": "What_Online_banking",
+      "patterns": ["What is online banking",
+        "define online banking",
+        "what does online banking means"],
+      "responses": ["Online banking, also known as internet banking, web banking or home banking, is an electronic payment system that enables customers of a bank or other financial institution to conduct a range of financial transactions through the financial institution's website."]
+    },
+    {
+      "tag": "Online_banking",
+      "patterns": ["Does janata Bank Has Online Banking system?",
+      "Does online banking system of janata bank exist?","do you have online baking system",
+      "Does janata bank offer Online banking","online banking system",
+      "Can I do online banking with janata Bank?","do you offer online service",
+      "Does janata Bank Offer Online Banking?","do you have online service",
+      "janata Bank Online Banking system"],
+      "responses": ["Yes, to protect environment by reducing paper and fuel dissipate, carbon emission Janata Bank Limited introduces online banking service to its customers. Janata Bank Limited also uses its own secured web-site for multipurpose communication."]
+    },
+    {
+      "tag": "Online_banking_activities",
+      "patterns": ["What janata Bank offer in online banking?","what can i do with online banking",
+        "Online Banking activities?","offers in online banking","the available options in online banking",
+        "what does janata Bank offers in online banking system",
+        "Online Banking options?"],
+      "responses": ["Parallel introduction of real time online core banking system. For more info visit : https://www.jb.com.bd/about_us/online_banking"]
+    },
+    {
+      "tag": "Online_banking_branches",
+      "patterns": ["what branches do online banking?",
+        "branches involve in online banking",
+        "branch does online banking",
+        "branch do online banking"],
+      "responses": ["Click here to find the list of branches that are involved in online banking: https://pmis.janatabank-bd.com/webonlinebranchinfo.aspx"]
+    },
+    {
+      "tag": "Open_current_deposit",
+      "patterns": ["How can I open current Deposit?","Opening current deposit account",
+      "Open current deposit","Requirements to open current deposit account","What I need to open current deposit account",
+      "documents needed to open current deposit account","how to open current account","open current account"],
+      "responses": ["To open Current Deposit, You have to have:\n 1. 2 passport size photos\n2. A copy of NID (National Identity Card)\n3. A copy of TIN certificate\n4. For MOA and AOA (for company), Incorporation certificate\n5. Trade license\n6. Account opening and Account operations board resolution."]
+    },
+    {
+      "tag": "interest_current_deposit",
+      "patterns": ["what is the interest of current deposit",
+        "what is the interest of current account","interest rate of current deposit",
+      "interest rate of current account"],
+      "responses": ["Current deposit doesn't have interest"]
+    },
+    {
+      "tag": "duration_current_deposit",
+      "patterns": ["what is the duration of current deposit","what is the expired date of current deposit",
+        "what is the duration of current account","duration of current account","expired timelimit of current account","period of current account"],
+      "responses": ["Current deposit doesn't have any activation time limit."]
+    },
+    {
+      "tag": "installment_current_deposit",
+      "patterns": ["what is the monthly installment of current deposit","what is the installment type of current deposit",
+        "installment of current deposit","installment of current account"],
+      "responses": ["Current deposit doesn't have any specific monthly installment amount."]
+    },
+    {
+      "tag": "Close_current_deposit",
+      "patterns": ["How can I close Current Deposit?","how to close current account","close current account",
+        "What to do to close current deposit account","What is the method to close current deposit",
+        "Close current deposit"],
+      "responses": ["You can close the Current Deposit at any time you wish with proper notice and documents."]
+    },
+    {
+      "tag": "open_saving_deposit",
+      "patterns": ["How can I open saving deposit?","how to open saving account","open saving account",
+        "Open saving deposit","Process to open saving deposit","tell me about saving deposit",
+        "Requirements needed to open saving deposit",
+        "what documents are needed to open saving deposit"],
+      "responses": ["You can open Saving Deposit at any local branches of Janata Bank Limited. To open an account, you have to have:\n 2 copy passport size photos,\n a copy passport size photo of nominee,\n A copy of NID/Passport,\n For underage individuals, a copy of birth certificate,\n Citizen’s Certificate signed by Union/Upazila Parishad Chairman/City Corporation (Mayor),\n Need to verify your identity by an account holder of the bank."]
+    },
+    {
+      "tag": "close_saving_deposit",
+      "patterns": ["How can I close saving deposit",
+        "close saving deposit","can you tell me how to close saving deposit?","what I need to do to close saving deposit account?"],
+      "responses": ["By giving a proper notice/request, you can close the Saving Deposit Account."]
+    },
+    {
+      "tag": "interest_saving_deposit",
+      "patterns": ["what is the interest rate of Saving deposit account?","what is the interest rate of saving account",
+        "interest rate of saving account","Tell me about the interest rate of saving deposit","what's the interest rate of saving deposit",
+        "interest rate of Saving deposit?","what percentage is the interest rate of saving deposit"],
+      "responses": ["The interest rate of Saving Deposit account is 3.75% (According to the latest circular guideline)"]
+    },
+    {
+      "tag": "nominee_saving_deposit",
+      "patterns": ["Do I need to have a nominee for saving deposit account?",
+        "Nominee for saving account?","Do I need to have a nominee to open saving deposit account?",
+        "Need to have a nominee for Saving Deposit account?"],
+      "responses": ["Yes, you need to have a nominee for Saving Deposit account."]
+    },
+    {
+      "tag": "open_special_notice_deposit",
+      "patterns": ["How can I open Special Notice Deposit account?",
+        "what I need to open special notice deposit?","How can I open snd account",
+        "documents needed to open spacial notice deposit?","documents needed for snd account","documents needed to open snd account",
+        "What to do to open special notice deposit","open snd account",
+        "open special notice deposit"],
+      "responses": ["To open a Special Notice Deposit account, you have to have:\n Certificate issued by MOU, RJC in case of organization/company,\n Appropriate approval in case of company, \n A 7 days prior notice has to be given in case of transfer of funds or withdrawal of cash from the account,\n  2 copy passport size photos,\n a copy passport,\n A copy of NID/Passport,\n For underage individuals, a copy of birth certificate,\n Citizen’s Certificate signed by Union/Upazila Parishad Chairman/City Corporation (Mayor),\n Need to verify your identity by an account holder of the bank,\n no nominee is need."]
+    },
+    {
+      "tag": "interest_special_notice_deposit",
+      "patterns": ["What is the interest rate of Special Deposit account?","interest rate of snd account",
+        "interest of special notice deposit","interest rate of special notice account","interest of snd account",
+        "interest special notice deposit","the percentage of interest rate of special notice deposit?"],
+      "responses": ["The interest rates of Special Notice Deposit account are:\n till 50.00 crore 3.75% interest,\n from 50.00 crore to 100 crore 3.75%, from 100.00 crore to above 4.00% interest rate."]
+    },
+    {
+      "tag": "close_special_notice_deposit",
+      "patterns": ["How can I close special notice deposit?","close snd account",
+        "how to close special notice deposit?", "How to close snd account",
+        "Can I close special notice deposit?","what I need to do to close special notice deposit",
+        "close special notice deposit"],
+      "responses": ["You can close the account by giving proper notice."]
+    },
+    {
+      "tag": "installment_snd_deposit",
+      "patterns": ["what is the monthly installment of special notice deposit","snd installments",
+        "what is the installment type of special notice deposit","installments of snd",
+        "installment of special notice deposit","monthly installment of snd",
+        "installment of special account"],
+      "responses": ["Special Notice deposit(SND) doesn't have any specific monthly installment amount."]
+    },
+    {
+      "tag": "transfer_withdrawal_special_notice_deposit",
+      "patterns": ["Transfer of funds or withdrawal of cash from special notice deposit","withdraw from snd account","transfer money from snd account",
+        "withdrawal fund from special notice deposit rules?","transfer funds from special notice deposit rules",
+        "transfer funds from special notice deposit","withdrawal funds for special notice deposit","Transfer money from special deposit","withdraw money from special deposit"],
+      "responses": ["A 7 days prior notice has to be given in case of transfer of funds or withdrawal of cash from the account."]
+    },
+    {
+      "tag": "types_of_fixed_deposit",
+      "patterns": ["What types of fixed deposit are there?","types of fixed deposit the bank offer",
+        "types of fixed deposit?","what can you tell me about types of fixed deposit?"],
+      "responses": ["There are three types of fixed deposit: \n More than 3 months but less then 6 months,\n more than 6 months but less than 1 year,\n And more then 1 year but less than 2 years."]
+    },
+    {
+      "tag": "cashOut",
+      "patterns": ["How to withdraw cash",
+        "how to cash out from account",
+        "How to cash out",
+        "How to withdraw money","How to cash out money"],
+      "responses": ["You can withdraw the money through the check-book provided by the bank."]
+    },
+    {
+      "tag": "transfer_fund",
+      "patterns": ["how to transfer fund",
+        "how can I transfer funds",
+        "how can I send out money",
+        "how can i transfer money",
+        "how to transfer money","how to transfer cash"],
+      "responses": ["you can transfer fund using Janata Bank app, atm, jb pin cash or visiting the local branch"]
+    },
+    {
+      "tag": "interestof_fixed_deposit",
+      "patterns": ["What is the interest rate of fixed deposit?","interest rate of fixed deposit",
+        "tell me the interest rate of fixed deposit","what is the interest of fixed deposit"],
+      "responses": ["The interest rate of fixed deposit is 6% "]
+    },
+  {
+      "tag": "howto_fixed_deposit",
+      "patterns": ["How to open fixed account",
+        "How can I open fixed deposit",
+        "how to open fixed deposit","Can I open a fixed deposit",
+      "Can I open a fixed account","How to open 3 to 6 months fixed deposit","What documents is needed to open three to six months fixed deposit?",
+        "open three to six months fixed deposit","How can I open three to six months fixed deposit",
+        "How to open three to six months fixed deposit","Can I open three to six months fixed deposit.","How to open 6 months to 1 year fixed deposit",
+        "open six months to one year fixed deposit","How can I open six months to one year fixed deposit",
+        "How to six to one year fixed deposit","open 6 to 1 year fixed deposit","Can I open six months to one year fixed deposit.","How to open 1 to 2 years fixed deposit",
+        "Can I open one to two years fixed deposit?","How to open one to two years fixed deposit?",
+        "open more then 1 year but less than 2 years fixed deposit"],
+      "responses": ["To open fixed deposit account, you have to have:\n 2 passport size photographs, a passport size photograph of nominee,\n a copy of National ID/Passport,\n for underage, a copy of birth certificate,\n Citizen’s Certificate signed by Union/Upazila Parishad Chairman/City Corporation (Mayor),\n FDR receipt should be issued against the deposit, interest rate should be clearly written,\n a copy of TIN certificate,\n Account Resolution and Account Management Board Resolution (For Limited Company),\nMOA and AOA (For Limited Company),\nIncorporation certificate (For Limited Company),\nMust be identified by a customer of the bank."]
+    },
+    {
+      "tag": "3to6_of_fixed_deposit",
+      "patterns": ["tell me about 3 to 6 months fixed deposit",
+        "tell me about three to six months fixed deposit",
+        "summary of 3 to 6 months fixed deposit","more then 3 months but less than 6 months fixed deposit"],
+      "responses": ["If you are interest to open this duration of account, you will get 6% interest rate till the account is expired, if you want to close the account before the fixed duration, you have to apply for it to the respected managers."]
+    },
+    {
+      "tag": "close_fixed_deposit",
+      "patterns": ["How can I close 3 to 6 months fixed deposit?","How can I close three to six months fixed deposit",
+        "How can I close fixed deposit","How can I close six to one year fixed deposit?","Can I close fixed deposit?",
+      "How to close 6 to 1 year fixed deposit"],
+      "responses": ["You have to submit a formal request to the Manager of the respective banks to close the fixed account."]
+    },
+    {
+      "tag": "6to1year_of_fixed_deposit",
+      "patterns": ["tell me about 6 to 1 year fixed deposit",
+        "tell me about six to one year fixed deposit",
+        "summary of 6 to 1 year fixed deposit","more then 6 months but less than 1 year fixed deposit"],
+      "responses": ["If you are interest to open 6 to 1 year duration fixed deposit account, you will get 6% interest rate respect to the account till it expire, if you wish to close the account, you have to submit a formal request to the respective bank manager, if the account is less than 3 months old before closing, then you have to pay SB rate, if its older than 3 months, you have to pay FDR rate."]
+    },
+    {
+      "tag": "1to2year_of_fixed_deposit",
+      "patterns": ["tell me about 1 year to 2 years fixed deposit",
+        "tell me about one year to two years fixed deposit","summary of 1 year to 2 years fixed deposit","more then 1 year but less than 2 years fixed deposit"],
+      "responses": ["If you are interested to open a 1 to 2 year fixed deposit account, you will get 6% interest rate on the respective account till the expired date, If you are wished to close the account before the expiration date, you will have to submit a formal request to the respected Bank Manager, but if the account is less than 3 months old, you will have to pay SB rate, FDR rate of 3 months has to be paid if the account is more than 3 months old, and FDR rate of 6 months has to be paid if the account is more than 6 months old."]
+    },
+    {
+      "tag": "close_1to2year_fixed_deposit",
+      "patterns": ["How to close 1 to 2 years fixed deposit","close 1 to 2 years fixed deposit.","Close one to two years fixed deposit",
+        "Can I close one to two years fixed deposit?","How to close one to two years fixed deposit?",
+        "close more then 1 year but less than 2 years fixed deposit"],
+      "responses": ["If you wish to close the fixed account, you have to submit a formal request to the respective bank manager, but you have to pay SB rate if the account is less than 3 months old, FDR rate of 3 months, if the account is older than 3 months and FDR rate of 6 months if the account is older than 6 months."]
+    },
+    {
+      "tag": "typesOf_Scheme_deposit",
+      "patterns": ["How many types of Scheme Deposit are there","tell me about your schemes",
+        "types of Scheme Deposits","Tell me the type of Scheme deposits","tell me about scheme",
+        "what are the scheme deposits?"],
+      "responses": ["There are five types of Scheme Deposit:\n Non-resident Pension Scheme,\n Janata Hajj Deposit Scheme,\n Janata Deposit Scheme,\n Janata Bank Women’s Welfare Savings Project,\n Janata Millionaire Deposit Scheme."]
+    },
+    {
+      "tag": "Nonresident_Scheme",
+      "patterns": ["Tell me about Nonresident pension Scheme",
+        "tell me about nrps",
+        "what is non-resident pension scheme?","what is nrps",
+        "What is non resident scheme?","Tell me about non resident scheme",
+        "explain non resident scheme","what can you tell me about nrps",
+        "What can you tell me about non resident pension scheme",
+        "give me summery of nrps",
+        "Summary of non resident pension scheme"],
+      "responses": ["Non-resident pension schemes duration is 5 years, monthly you can deposit 3000/5000/10,000/15,000/20,000 TK. The yearly interest rate is 8.5% (According to the latest Circular of Janata Bank Limited), You can deposit money at any time you want. To learn more visit: https://www.jb.com.bd/products/scheme_deposit#tab2"]
+    },
+    {
+      "tag": "Nonresident_Scheme_duration",
+      "patterns": ["what is the duration of non resident pension scheme",
+        "period of non resident pension scheme","period of nrps",
+        "duration of Non resident pension scheme","what is the duration of nrps",
+        "Duration of Non resident scheme","duration of nrps"],
+      "responses": ["The duration of Non-resident pension Scheme is 5 years."]
+    },
+    {
+      "tag": "Nonresident_Scheme_interest",
+      "patterns": ["what is the interest rate of non resident pension scheme?",
+        "tell me about the interest rate of non resident scheme","nrps interest rate",
+        "can you tell me about non resident scheme","interest rate of nrps",
+        "interest of non resident pension scheme","",
+        "interest rate of Non resident pension scheme"],
+      "responses": ["The yearly interest rate of Non-resident pension scheme is 8.5%."]
+    },
+    {
+      "tag": "Nonresident_Scheme_open",
+      "patterns": ["How can I open Non resident scheme account?",
+        "what I need to do top open non-resident scheme?","how to open nrps",
+        "documents need to open non resident scheme","how can I open nrps",
+        "open non resident scheme account","how open nrps",
+        "open non resident pension scheme"],
+      "responses": ["Bangladeshi Citizens residing/working abroad can open Non-resident Pension Scheme. To open the Scheme Deposit account, you have to have:\nAll the documents including customer’s signature, three passport size photographs, 1st seven page photocopy of passport should be attested and sent in the account opening form and sample signature card,\n the signature on account opening form, passport and sample signature has to be same,\n attested photo of the nominee nominated by the customer should be submitted,\n the installment has to be deposited through foreign remittance,\n Each months installments has to be paid within that month, Advance deposit is acceptable but no interest would be issued on the advance deposit,\n Non-resident customer’s personal saving account should be in the same branch and remittance should be sent through that account,\n If the account is closed in the absence of the customer, the status of the account should be given to his/her nominated nominee, following the proper rules,\n No account under this scheme can be open in the name of a minor."]
+    },
+    {
+      "tag": "close_Nonresident_Scheme",
+      "patterns": ["How can I close Non resident scheme account?","close nrps",
+        "How to close non resident scheme","how to close nrps","I wanna close nrps",
+        "how to close non resident pension scheme","how can I close nrps",
+        "close non resident scheme account",
+        "close non resident pension scheme"],
+      "responses": ["If you want to close the Non-resident Pension scheme, you need to submit a formal request with proper documents to the respected bank manager. But You need to know this before closing the account before its expire time,\n If the account is closed within one year of opening, the customer will get back only the principal deposited amount,\n If the account term is more than one year but less than three years, the customer will get the original deposit with simple interest at the rate of 5%,\n If the account term is more than three years, the customer will get the original deposit with simple interest at the rate of 6%."]
+    },
+    {
+      "tag": "Whocanhave_Nonresident_Scheme",
+      "patterns": ["who can open Non-resident pension scheme?","who can open nrps",
+        "what makes me eligible to open non resident scheme?","what is the eligibility to open nrps",
+        "eligibility to open non resident scheme","can i open nrps","i don't live in bangladesh, can i open any schemes",
+        "Can I open non resident pension scheme"],
+      "responses": ["Bangladeshi Citizens residing/working abroad can open Non-resident Pension Scheme."]
+    },
+    {
+      "tag": "janatahajj_Scheme",
+      "patterns": ["Tell me about janata hajj Scheme",
+        "Tell me about janata Hajj scheme",
+        "Tell me about Hajj scheme",
+        "what is janata hajj scheme",
+        "what is Hajj scheme",
+        "janata Hajj Scheme",
+        "Can you tell me about janata Hajj Scheme"],
+      "responses": ["The duration of Janata Hajj Deposit Scheme is one to twenty years. The installment will be decided upon the duration of Scheme, it’s completely interest free, you can deposit money at any given time of the month (During the Bank opening days). To learn more visit: https://www.jb.com.bd/products/scheme_deposit#tab3"]
+    },
+    {
+      "tag": "open_janatahajj_Scheme",
+      "patterns": ["How can I open janata Hajj Deposit Scheme?",
+        "what I need to do to open janata hajj scheme","how to open hajj scheme","documents need to open hajj scheme",
+        "Open janata hajj Scheme"],
+      "responses": ["To open Janata Hajj Deposit Scheme, You need to have:\n NID/Passport/Birth Certificate/Driving License attested photocopy,\n Recently captured 2 passport size attested photographs,\n Multiple accounts can be opened under a joint name or with the same name."]
+    },
+    {
+      "tag": "interest_janatahajj_Scheme",
+      "patterns": ["what is the interest rate of Hajj scheme?",
+        "what is the interest of janata Hajj Scheme",
+        "interest rate of janata Hajj scheme",
+        "janata Hajj scheme interest rate",
+        "Hajj scheme interest rate"],
+      "responses": ["No interest rate is applied on Janata Hajj Scheme."]
+    },
+    {
+      "tag": "close_janatahajj_Scheme",
+      "patterns": ["How can I close janata Hajj Deposit Scheme?",
+        "how to close hajj scheme","close hajj scheme","Terminate hajj scheme","can I close hajj scheme",
+        "close janata Hajj Scheme","terminate janata Hajj Scheme"],
+      "responses": ["You can terminate the Deposit at any given time and withdraw the money, no bank charge/fee will be attached to the process, but as per government rule, a small amount of charge will be applicable."]
+    },
+    {
+      "tag": "janata_Deposit_Scheme",
+      "patterns": ["tell me about Janata Deposit Scheme","tell me about jds",
+        "what is Janata deposit scheme","what is jds",
+        "Can you tell me about Janata deposit scheme","explain jds",
+        "explain Janata Deposit scheme",
+        "Summary of janata deposit scheme",
+        "Janata deposit Scheme"],
+      "responses": ["The duration of Janata Deposit Scheme is 5 years. You can deposit 1000/2000/5000/10,000/15,000/20,000/25,000 TK during this time. The annual compounding interest rate is 6%. You can only submit your deposit from1 to 10th of each month. To learn more visit: https://www.jb.com.bd/products/scheme_deposit#tab4"]
+    },
+    {
+      "tag": "interest_janata_Deposit_Scheme",
+      "patterns": ["what is the interest rate of janata deposit scheme","what is the interest rate of jds",
+      "interest rate of janata deposit scheme","interest rate of jds",
+      "janata deposit scheme interest rate","jds interest"],
+      "responses": ["Janata deposit scheme (JDS) has 6% annual compounding interest rate."]
+    },
+    {
+      "tag": "open_janata_Deposit_Scheme",
+      "patterns": ["how to open janata deposit scheme","open janata deposit scheme",
+        "how can i open jds","what requirement is needed to open janata deposit scheme",
+        "how can I open janata deposit scheme"],
+      "responses": ["To learn how to open Janata Deposit scheme, kindly visit here: https://www.jb.com.bd/products/scheme_deposit#tab4"]
+    },
+    {
+      "tag": "duration_janata_Deposit_Scheme",
+      "patterns": ["duration of janata deposit scheme","duration of jds",
+        "period of janata deposit scheme","period of jds"],
+      "responses": ["The duration of Janata deposit scheme is 5 years."]
+    },
+    {
+      "tag": "installment_janata_Deposit_Scheme",
+      "patterns": ["what is the monthly installment of Janata deposit scheme",
+        "what is the installments type of Janata deposit scheme","monthly installments amount of jds",
+      "monthly installments of janata deposit scheme","type of installments of jds","type of installments of janata deposit scheme"],
+      "responses": ["The monthly installments of Janata Deposit Scheme are:\n1000 TK,\n2000 Tk,\n5000 Tk,\n10,000 Tk,\n15,000 Tk,\n20,000 Tk and\n25,000 TK."]
+    },
+    {
+      "tag": "close_janata_Deposit_Scheme",
+      "patterns": ["how to close janata deposit scheme",
+        "how can i close jds",
+        "tell me how to close jds",
+        "tell me how can I close janata deposit scheme"],
+      "responses": ["To learn how to close Janata Deposit scheme, kindly visit here: https://www.jb.com.bd/products/scheme_deposit#tab4"]
+    },
+    {
+      "tag": "womens_welfare_Scheme",
+      "patterns": ["tell me about Janata Bank Womens Welfare Saving project",
+        "what is women welfare saving project?",
+        "can you describe womens welfare saving project?",
+        "what is womens welfare saving projects","explain womens welfare scheme"],
+      "responses": ["Janata Bank Women’s Welfare Saving Project has duration of 5 years and 10 years. You can monthly deposit 1000/1500/2000/2500/3000/5000/10,000/15,000/20,000/25,000 TK respectively. The interest rate is 6% and the time duration to deposit the money is from 1st to 10th of each month. To learn more visit: https://www.jb.com.bd/products/scheme_deposit#tab5"]
+    },
+    {
+      "tag": "open_womens_welfare_Scheme",
+      "patterns": ["how can I open womens welfare scheme","how to open womens welfare scheme","can I open womens welfare scheme","What I need to open womens welfare scheme",
+        "What documents are needed for womens welfare scheme?",
+        "open womens welfare saving project","open womens welfare scheme"],
+      "responses": ["To open the Saving project, you need to be 18+, self-sufficient, healthy, label headed Bangladeshi woman. For the account, you need to submit:\n A photocopy of NID/Passport/Driving License,\n Recently capture attested passport size photograph,\n One passport size photograph of nominee,\n All necessary documents attested by trusted source"]
+    },
+    {
+      "tag": "interest_welfare_Scheme",
+      "patterns": ["what is the interest rate of women welfare","women welfare interest","woman welfare interest",
+        "interest rate of women welfare scheme","interest of woman welfare scheme","welfare scheme interest"],
+      "responses": ["The interest rate of Janata Bank Womens Welfare Scheme is 6%"]
+    },
+    {
+      "tag": "close_womens_welfare_Scheme",
+      "patterns": ["how can I close womens welfare scheme","I wanna close my women welfare scheme",
+        "close womens welfare saving project","close womens welfare scheme",
+        "Terminate womens welfare saving project","terminate womens welfare scheme"],
+      "responses": ["To know how to close Janata Bank Womens Welfare Scheme visit here: https://www.jb.com.bd/products/scheme_deposit#tab5"]
+    },
+    {
+      "tag": "millionaire_Scheme",
+      "patterns": ["tell me about Janata Millionaire Deposit Scheme",
+        "What is millionaire scheme?","what is jmds",
+        "explain millionaire scheme","tell me about jmds",
+        "describe millionaire scheme",
+        "janata Millionaire Deposit Scheme",
+        "janata Bank Millionaire Deposit scheme"],
+      "responses": ["Janata Millionaire Deposit Schemes duration is 3 to 15 years. The amount of monthly installments are, 25,370/18,470/14,350/11,610/9,660/8200/7070/6180/4840/3530 TK. The annual compounding interest rate is 6% and you can do the installment from 11th to 20th of every month (Depending on the Banks opening). To learn more visit: https://www.jb.com.bd/products/scheme_deposit#tab6"]
+    },
+    {
+      "tag": "open_millionaire_Scheme",
+      "patterns": ["how can I open Janata Millionaire Deposit Scheme",
+        "What I need to open millionaire deposit scheme","how to open jmds account",
+        "documents needed to open millionaire deposit","to open jmds",
+        "open janata Millionaire Deposit Scheme",
+        "open janata Bank Millionaire Deposit scheme"],
+      "responses": ["Top open Janata Millionaire Deposit Scheme: \n copy of NID/Passport/Driving License,\n Recently captured 2 copy passport size photograph, \n One copy of nominees passport size photograph (attested by account holder),\n Every legal documents has to be attested by the senior officer."]
+    },
+    {
+      "tag": "interest_millionaire_Scheme",
+      "patterns": ["what is the interest rate of jmds",
+        "jmds interest rate","millionaire scheme interest",
+      "jmds interest","interest rate of millionaire scheme",
+        "what is the interest rate of millionaire scheme"],
+      "responses": ["Janata millionaire scheme deposit has 6% compounding interest."]
+    },
+    {
+      "tag": "close_millionaire_Scheme",
+      "patterns": ["how can I close Janata Millionaire Deposit Scheme",
+        "I want to close millionaire scheme","how to close jmds",
+        "how to close millionaire scheme","how can i close jmds",
+        "close Janata Millionaire Deposit Scheme","close jmds",
+        "Close Janata Bank Millionaire Deposit scheme"],
+      "responses": ["If you wish to close the fixed account, you have to submit a formal request to the respective bank manager."]
+    },
+    {
+      "tag": "Loans_types",
+      "patterns": ["What are the loans Janata Bank Offers","What type of loans are available?",
+        "types of Janata Banks loans","types of loans"],
+      "responses": ["Janata Bank Limited offers the following loans: \n Agriculture Loans.\n Working Capital Loan. \n House Building/Flat loan for Govt. Employee.\n Rural Credit, \n Tannery Trading. \n Commercial Real-Estate Loan, \n Educational Loan, \n Healthcare loan, \n Special loan for women entrepreneur. \n Green Financing, \n Consumer Financing.\n for more info visit: https://www.jb.com.bd/products/agriculture_loans"]
+    },
+    {
+      "tag": "credit_eligibility",
+      "patterns": ["What is credit card eligibility","eligible for credit card","eligibility for credit card",
+        "Am I eligible for credit card","what I need to be eligible for credit card"],
+      "responses": ["To be eligible for applying credit card, You have to be: \n A Bangladeshi, \n An account holder of Janata Bank, \n Government, Semi-government, private or self employed job holders, businessmen and the job holders of Janata Bank are eligible,\n for primary credit card, you need to be between 21 to 60 years old, \n for supplementary credit card, you need to be between 21 to 60 years old."]
+    },
+    {
+      "tag": "credit_limit",
+      "patterns": ["What is credit card limit","limit of credit card","credit card limit",
+        "tell me about credit card limit","what's the limit of credit card"],
+      "responses": ["The limit of credit card is 2,00,000 – 4,00,000 Tk"]
+    },
+    {
+      "tag": "credit_interest_rate",
+      "patterns": ["What is credit card interest rate","interest on credit card","credit card interest",
+        "tell me about credit card interest","what's the interest rate of credit card"],
+      "responses": ["In case of cash transaction at ATMs, the rate will be 1.18% per month on daily product basis from the date of transaction. In case of POS transaction at the rate of 1.18% per month on daily product basis form the date of transaction."]
+    },
+    {
+      "tag": "credit_period",
+      "patterns": ["What is the duration of credit card loan","duration of credit card loan","credit card period",
+        "tell me about credit card period of loan","what's the period of credit card"],
+      "responses": ["The period of loan is 1 year. But depending on the transaction the period can be extended/reduce."]
+    },
+    {
+      "tag": "credit_installment",
+      "patterns": ["What is the installment types of credit card","installment types of credit card loan","credit card installments",
+        "tell me about credit card installments","credit card installment"],
+      "responses": ["The installment type of the credit card is, monthly."]
+    },
+    {
+      "tag": "installment_type",
+      "patterns": ["what is the installment type",
+        "what is the installment","how about the installment"],
+      "responses": ["Please kindly be specific what kind of installment. (Example: Credit card installment)"]
+    },
+    {
+      "tag": "us_bond",
+      "patterns": ["what is US bonds?",
+        "Define US bonds"],
+      "responses": ["The Government of the People's Republic of Bangladesh has introduced US Dollar Investment Bond and US Dollar Premium Bond to facilitate investment of hard -earned foreign currency by the non-resident Bangladeshis."]
+    },
+    {
+      "tag": "eligible_us_bond",
+      "patterns": ["who are eligible for US bonds?",
+        "Am I eligible for U.S Bonds",
+        "Can I open US bonds"],
+      "responses": ["Non-resident Bangladeshis are eligible to purchase US Dollar Investment Bond and US Dollar Premium Bond with the foreign currency sent to his F. C. account or with the cheque/draft in foreign currency (after collection of cheque/draft)."]
+    },
+    {
+      "tag": "us_dollar_investment",
+      "patterns": ["tell me about us dollar investment",
+        "Us dollar investment","what are the facilities of US dollar investment bond?",
+      "Facilities of US dollar bonds","US dollar investment"],
+      "responses": ["The facilities US dollar investment provides are:Period: (3) three years.\nRate of Interest:\n On completion of 3 years (full term) – 6.5%\nOn completion of 2 years – 6%,\nOn completion of 1 year – 5.5%,\nNo interest before completion of 1 year.\nRepayment of interest on 6(six) months basis.\nInterest is payable in US dollar. Interest and Principal amount are also repayable in Bangladeshi Taka at the request of the purchaser of bonds.\nBoth Principal amount and interest are repatriable."]
+    },
+    {
+      "tag": "US_dollar_premium",
+      "patterns": ["what are the facilities of Us dollar premium?",
+        "Us dollar premium",
+        "Facilities of US dollar premium","what US dollar premium offer?",
+        "US dollar premium offer."],
+      "responses": ["Period: 3 years.\nRate of interest:\nOn completion of 3 years (full term) – 7.5%,\nOn completion of 2 years – 7 %,\nOn completion of 1 year – 6.5%,\nNo interest before completion of 1 year.\nRepayment of Interest on 6 (six) months basis.\nInterest is payable in Bangladeshi Taka only. Principal amount is also repayable in Bangladeshi Taka at the request of the purchaser.\n Death-risk-benefit for purchases of Premium Bonds at least USD. 10,000/- at the first instance and increase investment subsequently will qualify for a free death-risk-benefit @15% to 25% on fulfillment of certain terms and conditions. Not Exceeded TK 20,00,000/-.\nPrincipal amount is repatriable."]
+    },
+    {
+      "tag": "Foreign_contact",
+      "patterns": ["What are the foreign contact information",
+        "Foreign contact information","Overseas branches contact info",
+        "Overseas branches contact info","Contact information of foreign branches",
+        "contact info of overseas"],
+      "responses": ["For detail information, the expatriates may contact Bangladesh Embassy/High Commission/Consulate Office abroad or Janata Bank Limited Branches in Abu Dhabi (E-mail: jbadas@emirates.net.ae), Dubai (E-mail jbdxbb@emirates.net.ae), Sharjah (E-mail: jbshj@emirates.net.ae), Al-Ain (E-mail: jbaln@emirates.net.ae) in UAE and Janata Exchange Company s.r.l.Italy(E-mail:janataexchange@libero.it), Or resource Person:\n The Deputy General Manager, Overseas Banking Department, Janata Bank Limited, Head Office, 110, Motijheel C/A, Dhaka-1000, Bangladesh. Phone : (88-02) 956 6442, (88-02) 956 6443, Fax : (88-02) 956 4644, E-mail : id-obd@janatabank-bd.com, SWIFT : JANBBDDH"]
+    },
+    {
+      "tag": "take_loan",
+      "patterns": ["How to take loan from janata bank",
+        "What are the process to take loan from Janata bank",
+        "How can I take loan from janata bank","Tell me the process to take loan from janata Bank"],
+      "responses": ["Please contact with the local branches or visit Janata Banks Website for the information: https://www.jb.com.bd/"]
+    },
+    {
+      "tag": "student_loan",
+      "patterns": ["Do you offer student loans",
+        "do you offer educational loan?",
+        "Can I apply for student loan?","How to apply for student loan","I wanna take student loan","I want to take student loan","I want to take educational loan",
+      "How to apply for education loan","Can I get a student loan","How to apply for student loan","How can I get student loan","Can I get educational loan",
+      "how can i apply for education loan","can i get education loan","how can I get education loan"],
+      "responses": ["Yes, Janata Bank offer education loan. To know more about it visit: https://www.jb.com.bd/products/education_loan"]
+    },
+    {
+      "tag": "student_loan_interest",
+      "patterns": ["what is the interest rate of student loan","student loan interest rate",
+      "interest of student loan","interest of education loan","interest of educational loan"],
+      "responses": ["the interest rate of student loan is 11%"]
+    },
+  {
+    "tag": "student_loan_installment",
+    "patterns": [
+      "installment type of student loan",
+      "what is the installment type of education loan",
+      "student loan installment type"
+    ],
+    "responses": [
+      "The installment types is monthly/per semester."
+    ]
+  },
+    {
+      "tag": "loan_period",
+      "patterns": ["What is the loan period",
+        "what is the total duration of the loan",
+      "what is the time limit of the loan"],
+      "responses": ["Please be specific about the loan type.(Example: period of student loan)"]
+    },
+    {
+      "tag": "student_loan_limit",
+      "patterns": ["What is the student loan limit",
+        "student loan limit","education loan limit","student limit with mortgage","student limit without mortgage"],
+      "responses": ["Without Mortgage: 0.5 to 2.00 Lakh (50k to 200k)\n with Mortgage: maximum 10 Lakh (1000k)"]
+    },
+    {
+      "tag": "agriculture_loan",
+      "patterns": ["Do you offer agriculture loan","installments of agriculture loan",
+        "Can I apply for loan to buy a cow","Can I get agricultural loan",
+        "what is the installment type of agriculture loan","Where can I apply for the agriculture loan"],
+      "responses": ["Janata Bank offer Agriculture Loan for individuals who are associated with agricultural work. For More information visit: https://www.jb.com.bd/products/agriculture_loans"]
+    },
+    {
+      "tag": "house_loan",
+      "patterns": ["Can I apply for house loan","Can I get loan for buying a house",
+      "Can I get loan to buy house","Can I get house loan","can I get flat loan"],
+      "responses": ["If you are government employee then visit this site to know more about the details about it: https://www.jb.com.bd/about_us/govt_loan\nIf you are not a government employee, visit this site to know more detailed information: https://www.jb.com.bd/products/house_building_apartment"]
+    },
+    {
+      "tag": "specify_interest_rate",
+      "patterns": ["What is your interest rate","What is the interest","what are the interest",
+        "What is your yearly interest rate",
+        "What is your monthly interest rate",
+        "Tell me your monthly interest rate","tell me your yearly interest rate"],
+      "responses": ["Can you please specify the types of account/loan you want to know the interest rate.(example: Saving accounts interest rate)"]
+    },
+      {
+      "tag": "real_estate_loan",
+      "patterns": ["Do you guys provide real estate loan",
+        "real estate period of loan","how can I take real estate loan",
+      "how to apply for real estate loan","can i apply for real estate loan"],
+      "responses": ["Visit this site to know the details: https://www.jb.com.bd/products/real_estate_loan"]
+    },
+    {
+        "tag": "real_estate_interest",
+      "patterns": ["what is the interest rate of real estate loan",
+        "real estate loan interest","interest rate of real estate loan"],
+      "responses": ["The Bank apply 12% compound interest on real estate loan"]
+    },
+    {
+        "tag": "real_estate_installments",
+      "patterns": ["What is the installments type of real estate",
+        "real estate installments type","real estate installments"],
+      "responses": ["The installments type is Monthly."]
+    },
+    {
+      "tag": "Not_trained",
+      "patterns": [
+        "Do you provide insurance","How to close debit card",
+        "how to close credit card","how can i get a debit card",
+        "how to apply for debit card","can i open a student account",
+        "I want to close my debit card","close debit card","apply for micro credit",
+        "close credit card","Can I take long term loan","micro credit application",
+        "can I take short term loan","Can I take mid term loan","what do i need to apply for micro credit",
+        "I want to close my credit card","Do you provide banks note","what do i need to open micro credit",
+        "bank notes","insurance","process of short term loan",
+      "process of long term loan","process of mid term loan",
+        "how to get long term loan","how to get short term loan",
+    "How to get mid term loan","interest rate of current deposit",
+        "interest rate of current account","how to withdraw cash from saving account",
+  "how to withdraw cash from current account", "tell me about convertible taka account",
+        "covertable taka account","Non convertible taka account",
+        "Exporter's FC deposit"],
+      "responses": ["Sorry I don't know the information. Please contact with the local branch or visit Janata Bank website: https://www.jb.com.bd/"]
+    },
+    {
+      "tag": "sms_alert",
+      "patterns": ["sms alert","sms system","text system",
+        "tell me about the sms alert","do you provide sms service","do you have sms service",
+        "Charges of Sms alert","sms service","do i have to pay for sms service",
+        "Vat of sms alert","what is the payment for sms service","sms service",
+        "Commission of sms alert"],
+      "responses": ["Janata Bank provide sms alert service, Commission : 100 TK, VAT: 15 TK, on a semi-annual basis with 115 TK rate of charge."]
+    },
+    {
+      "tag": "not_banking_related",
+      "patterns": ["I don't feel well","How old are you",
+        "How are you doing?","Do you have a boyfriend or girlfriend",
+        "Do you have a partner",
+        "Can I rob your bank","let's play a game",
+        "I wanna rob your bank","Do you like music","Do you like reading","Do you like",
+        "Can you chat a little bit","Do you love","boyfriend","Girlfriend","Partner","Sexuality",
+        "I want to kill myself","You don't wanna share",
+        "I want to go aboard","I want food","where can I find food"," direction food",
+        "Are you a boy or girl","music","movie","paintings","games","footballs","kill me",
+        "Do you wanna go on a date with me","light","fan","shoes",
+        "I love you","what is life","what is love","what is home",
+        "I wish to see you",
+        "I wish you were real",
+        "Do you love me",
+        "Want to go on a date with me",
+        "Can I marry you"],
+      "responses": ["Please ask Banking related questions",
+        "Please kindly stick to Banking related questions","Please provide bank related questions","Ask Banking related questions."]
+    },
+    {
+      "tag": "insult_bit",
+      "patterns": ["You suck!","You are rude","That's rude","Why you are so rude",
+        "You are an idiot","shut up","shut the fuck up","what the fuck",
+        "Idiot","You are a little rude bot","Bad bad bot","Bad bot",
+        "Fucking give me an answers","Say sorry","apologize",
+        "Fucking stupid","Hey where is your manners?","bad manners",
+        "Fuck you","Fuck ya",
+        "You are stupid","Oh you are a private bot",
+        "you stupid bitch","what time it is","tell me today's date",
+        "bitch","I hate ya","I hate you",
+        "fucking idiot",
+        "You should kill yourself",
+        "Die you stupid bot",
+        "I will fucking murder you"],
+      "responses": ["Please kindly maintain professionalism. Ask Bank related questions."]
+    },
+    {
+      "tag": "specify_interest",
+      "patterns": ["what is interest rate","what is your interest rate","tell me about your interest rate","what is the interest rate"],
+      "responses": ["Please kindly be more specific on what account type interest you wish to know. [Example: Saving account interest]"]
+    },
+    {
+      "tag": "specify_loan",
+      "patterns": ["How to take a loan",
+        "How can I take a loan","Am I eligible for loans","i want to take some loan",
+        "i wish to take a loan","what is the installments type of loans","i want to take loan",
+        "I want to take a loan","what do i need to get a loan","I wanna take loan",
+        "how can I be eligible for the loan","what makes me eligible to take the loan",
+        "Can i take loan for here",
+        "will I be able to take a loan?"],
+      "responses": ["What type of loan do you want to take?","Sure, What type of loan you wish to take","Janata Bank offers various types of loan. What kind you want to take?"]
+    },
+    {
+      "tag": "working_capital_loan",
+      "patterns": ["what is working capital loan","does you provide working capital loan",
+      "how can I take working capital loan","what is the limit of working capital loan",
+      "working capital loan","working capital interest rate","installment types of working capital loan",
+        "how can I be eligible for working capital loan","period of loan of working capital loan",
+        "what are the mortgages option of working capital loan"],
+      "responses": ["Janata Bank offer the working capital loan. To learn more about it, visit : https://www.jb.com.bd/products/working_capital_loan#tab2"]
+    },
+    {
+      "tag": "green_financing",
+      "patterns": ["green financing","tell me about green financing",
+        "how can I have green financing loan","what is the interest rate of green financing",
+        "green financing interest rate","how can i be eligible for green financing loan",
+      "period of green financing loan","what is the installments type of green financing loan"],
+      "responses": ["Janata Bank offer green financing. To learn more about it, visit : https://www.jb.com.bd/products/green_financing#tab2"]
+    },
+    {
+      "tag": "rural_credit",
+      "patterns": ["what is rural credit?",
+      "do you offer rural credit loan","rural credit",
+        "what is the period of loan of rural credit","how can i be eligible for rural credit loan",
+      "what is the interest rate of rural credit","rural credit interest","what is the limit of rural credit"],
+      "responses": ["Janata Bank offer rural credit loan. To learn more about it, visit : https://www.jb.com.bd/products/rural_credit#tab2"]
+    },
+    {
+      "tag": "tannery_trading",
+      "patterns": ["what is tannery trading","do you offer tannery trading",
+      "eligibility of tannery trade","what is the limit of tannery trade","tannery trading interest",
+      "what is the installment type of tannery trading","what is the period of loan of tannery trading",
+      "what is mortgage type of tannery trading","what is the security of tannery trading"],
+      "responses": ["Janata Bank offer tannery trading. To learn more about it, visit : https://www.jb.com.bd/products/tannery_trading"]
+    },
+    {
+      "tag": "consumer_financing",
+      "patterns": ["what is consumer financing","do you offer consumer financing",
+      "what are the eligibility of consumer financing","what is the interest rate of consumer financing",
+      "what is the limit of consumer financing","what is the period of loans of consumer financing",
+      "what is the security of consumer financing","how can I get consumer financing","consumer financing"],
+      "responses": ["Janata Bank offer consumer financing. To learn more about it, visit : https://www.jb.com.bd/products/consumer_financing"]
+    },
+    {
+      "tag": "healthcare_loan",
+      "patterns": ["Do you offer healthcare loan","do you offer loan for healthcare",
+      "healthcare loan","what is the limit of healthcare loan","where can I get healthcare loan",
+        "what is the security options of healthcare loan","what are the mortgage options for healthcare loan",
+      "am i eligible for healthcare loan","how can I be eligible for healthcare loan",
+      "how can I take healthcare loan","what is the installments type of healthcare",
+      "installment type of healthcare loan","what is the interest rate of healthcare loan",
+      "what is the period of healthcare loan"],
+      "responses": ["Janata Bank offer healthcare loan. To learn more about it, visit : https://www.jb.com.bd/products/health_service"]
+    },
+    {
+      "tag": "womens_loan",
+      "patterns": ["do you offer any loan for women",
+      "do you offer any special loan for women","is there any special loan for women",
+      "special loan for women","loan for women","any loan specially for woman",
+      "as a woman, can I get any special loan","Loan for women"],
+      "responses": ["Janata Bank offer special loan for businesswomen. To learn more about it, visit : https://www.jb.com.bd/products/specialized_loan"]
+    },
+    {
+      "tag": "short_text",
+      "patterns": ["how","why","when",
+        "really","how to do that",
+        "how can I do that","what to do","how to collect","when should i",
+        "how to withdraw","i want to know","when i have to",
+        "how can i know","is it possible","are you sure","why i have to"],
+      "responses": ["Please kindly ask clear questions and specify the exact information you want to know.[Example: I want to open an account]"]
+    }
+]
+
+  }
